@@ -1,0 +1,17 @@
+# railway.yaml — Конфигурация для запуска Telegram-бота как worker-процесс
+
+services:
+  bot:
+    buildCommand: pip install -r requirements.txt
+    startCommand: python botttg.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "7555630505:AAGWtcMBE5CBkRVz-fzc8En9X7BEFIr3qiQ"
+      - key: ADMIN_ID
+        value: "6577960531"
+      - key: GREEN_API_URL
+        value: "https://7105.api.greenapi.com"
+      - key: GREEN_API_ID_INSTANCE
+        value: "7105242193"
+      - key: GREEN_API_TOKEN
+        value: "2efdd4fb9eaa4d82972f8c3fb20d13fe83636e14b4b3404daa"
